@@ -1,4 +1,20 @@
-alfresco-tracking-removal
-=========================
+Alfresco Tacking Image Removal Patch
+====================================
 
-Removes tracking image from Alfresco Community Edition
+Distributed for free without any license or  warranty. Use at your own risk.
+
+Instructions
+============
+
+1. Place an Alfresco share.war file in the current working directory. 
+2. Run the ./patch.sh command
+
+This has been tested on Alfresco 4.2b and 4.2c. Your mileage on other versions may vary.
+
+Source (.java) and binary (.class) files are included. 
+
+Additional details:
+
+http://penguindreams.org/blog/removing-the-tracking-image-from-alfresco 
+
+Sumit Khanna - <sumit@penguindreams.org>
