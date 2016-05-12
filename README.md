@@ -6,6 +6,10 @@ Distributed for free without any license or  warranty. Use at your own risk.
 Instructions
 ============
 
+1. Look at the README located in the amp folder to build an Alfresco module (contributed by @Pluies)
+
+**or manually patch the war**
+
 1. Place an Alfresco share.war file in the current working directory. 
 2. Run the ./patch.sh command
 
