@@ -3,6 +3,8 @@ Remove that *hidden*, *hardcoded* and *annoying* tracking image from Alfresco Co
 
 Distributed for free without any warranty. Use at your own risk.
 
+Tested with **Alfresco Community Edition 6.2 GA**.
+
 ## Instructions
 ### Build
 Get the sources:
