@@ -1,4 +1,4 @@
-Alfresco Tacking Image Removal Patch
+Alfresco Tracking Image Removal Patch
 ====================================
 
 Distributed for free without any license or  warranty. Use at your own risk.
