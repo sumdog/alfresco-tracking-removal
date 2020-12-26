@@ -22,8 +22,8 @@ $ mvn package
 [INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-sdk-requirements) @ alfresco-tracking-removal ---
 [...]
 [INFO] --- alfresco-maven-plugin:2.2.0:amp (default-amp) @ alfresco-tracking-removal ---
-[INFO] Building jar: /home/saidone/workspace-alfresco/alfresco-tracking-removal/target/amp/lib/alfresco-tracking-removal-1.0.jar
-[INFO] Building amp: /home/saidone/workspace-alfresco/alfresco-tracking-removal/target/alfresco-tracking-removal-1.0.amp
+[INFO] Building jar: alfresco-tracking-removal/target/amp/lib/alfresco-tracking-removal-1.0.jar
+[INFO] Building amp: alfresco-tracking-removal/target/alfresco-tracking-removal-1.0.amp
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ $ mvn package
 ### Installation
 Install the amp against share.war using the Module Management Tool (MMT):
 ```
-$ java -jar alfresco-mmt.jar install alfresco-tracking-removal-1.0.amp share.war
+$ java -jar alfresco-mmt.jar install target/alfresco-tracking-removal-1.0.amp share.war
 ```
 and restart Alfresco.
 
