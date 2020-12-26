@@ -1,4 +1,6 @@
 # Alfresco Tracking Image Removal Patch
+Remove that *hidden*, *hardcoded* and *annoying* tracking image from Alfresco Community
+
 Distributed for free without any warranty. Use at your own risk.
 
 ## Instructions
