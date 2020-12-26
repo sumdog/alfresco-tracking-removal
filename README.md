@@ -2,7 +2,7 @@
 Distributed for free without any warranty. Use at your own risk.
 
 ## Instructions
-# Build
+### Build
 get the sources:
 ```console
 $ git clone https://github.com/saidone75/alfresco-tracking-removal.git -b v1.0.0
@@ -29,13 +29,15 @@ $ mvn package
 [INFO] Finished at: 2020-12-26T15:15:55+01:00
 [INFO] ------------------------------------------------------------------------
 ```
-install the amp against share.war using the Module Management Tool (MMT):
+### Installation
+Install the amp against share.war using the Module Management Tool (MMT):
 ```
 $ java -jar alfresco-mmt.jar install alfresco-tracking-removal-1.0.amp share.war
 ```
 and restart Alfresco.
 
-This turned out to be a complete overhaul of the original patch, credits for the idea goes to:
+## Credits
+Credits for this patch goes to:
 
 http://penguindreams.org/blog/removing-the-tracking-image-from-alfresco 
 
