@@ -11,7 +11,7 @@ Get the sources:
 ```console
 $ git clone https://github.com/saidone75/alfresco-tracking-removal.git -b v1.0.0
 ```
-build the amp:
+build the AMP:
 ```console
 $ cd alfresco-tracking-removal
 $ mvn package
