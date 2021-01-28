@@ -1,25 +1,50 @@
-Alfresco Tacking Image Removal Patch
-====================================
+# Alfresco Tracking Image Removal Patch
+Remove that *hidden*, *hardcoded* and *annoying* tracking image from Alfresco Community
 
-Distributed for free without any license or  warranty. Use at your own risk.
+Distributed for free without any warranty. Use at your own risk.
 
-Instructions
-============
+Tested with **Alfresco Community Edition 6.2 GA**.
 
-1. Look at the README located in the amp folder to build an Alfresco module (contributed by @Pluies)
+## Instructions
+### Build
+Get the sources:
+```console
+$ git clone https://github.com/saidone75/alfresco-tracking-removal.git -b v1.0.0
+```
+build the AMP:
+```console
+$ cd alfresco-tracking-removal
+$ mvn package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------< org.saidone:alfresco-tracking-removal >----------------
+[INFO] Building alfresco-tracking-removal AMP project 1.0
+[INFO] --------------------------------[ amp ]---------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-sdk-requirements) @ alfresco-tracking-removal ---
+[...]
+[INFO] --- alfresco-maven-plugin:2.2.0:amp (default-amp) @ alfresco-tracking-removal ---
+[INFO] Building jar: alfresco-tracking-removal/target/amp/lib/alfresco-tracking-removal-1.0.jar
+[INFO] Building amp: alfresco-tracking-removal/target/alfresco-tracking-removal-1.0.amp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.688 s
+[INFO] Finished at: 2020-12-26T15:15:55+01:00
+[INFO] ------------------------------------------------------------------------
+```
+### Installation
+Install the AMP against share.war using the Module Management Tool (MMT):
+```
+$ java -jar alfresco-mmt.jar install target/alfresco-tracking-removal-1.0.amp share.war
+```
+and restart Alfresco.
 
-**or manually patch the war**
+### Pre-built AMP
+On [releases](https://github.com/saidone75/alfresco-tracking-removal/releases) page
 
-1. Place an Alfresco share.war file in the current working directory. 
-2. Run the ./patch.sh command
-
-This has been tested on Alfresco 4.2b/4.2c as well as 5.0/5.1 community (thanks @patricia93sousa)
-
-Your mileage on other versions may vary.
-
-Source (.java) and binary (.class) files are included. 
-
-Additional details:
+## Credits
+Credits for this patch goes to:
 
 http://penguindreams.org/blog/removing-the-tracking-image-from-alfresco 
 
